@@ -32,7 +32,7 @@
 define haproxy::resolvers (
   $nameservers,
   $holds            = [],
-  $resolve_retries  = undef,
+  $resolve_retries  = false,
   $timeouts         = [],
 ) {
 
