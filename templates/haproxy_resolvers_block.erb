@@ -2,8 +2,8 @@ resolvers <%= @name %>
   <%- Array(@nameservers).each do |nameserver_details| -%>
   nameserver <%= nameserver_details %>
   <%- end -%>
-  <%- if @resolve_retries then -%>
-  resolve_retries <%= resolve_retries %>
+  <%- if @resolve_retries -%>
+  resolve_retries <%= @resolve_retries %>
   <%- end -%>
   <%- Array(@timeouts).each do |timeout_details| -%>
   timeout <%= timeout_details %>
